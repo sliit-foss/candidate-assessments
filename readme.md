@@ -36,3 +36,11 @@
 <br/>
 
 ## Content Writing
+
+- You should be able to write the caption according to the description given.
+
+- You can add submissions in any file format that is supported.
+
+- We will assess you based on several criteria, such as creativity, grammar and clarity.
+
+- Note that you can refer to the previous posts on our Social Media to get an idea of how to complete the task. But you CAN NOT copy someone else's work and show them as your own.
