@@ -36,3 +36,7 @@
 <br/>
 
 ## Content Writing
+
+- You should be able to write the caption according to the description given. Do not copy others' work. 
+
+- We will assess you based on several criteria, such as creativity, grammar and clarity.
