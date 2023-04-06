@@ -1,4 +1,4 @@
-# Description:
+# Description
 
 - This task is to implement a simple server with the basic functionality of user registration and login.
 

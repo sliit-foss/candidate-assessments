@@ -1,4 +1,4 @@
-# Description:
+# Description
 
 - Build a wrapper around the following 2 APIS and expose it as an NPM package.
     - [Random Joke](https://documenter.getpostman.com/view/8854915/Szf7znEe#86a5b520-e907-4eee-95fd-6dcdc24f8a83)
