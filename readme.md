@@ -31,6 +31,8 @@
 
 - Code can be referenced from anywhere. This repository is public which means you can even refer to other submissions. However, whatever code you may use will have to have the ability to be explained in the following interview if you are selected. Failure to do so will result in us considering that it's just a mere copy paste of code. 
 
+<br/>
+
 ## Design
 
 - A flyer should be relevant to the given content.
