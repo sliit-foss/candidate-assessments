@@ -39,7 +39,7 @@
 
 - You can use any logos you want.
 
-- The submitted file should be of .png/.jpg type.
+- The submitted file should be as .png/.jpg type.
 
 - We will assess you based on several criteria, such as creativity, clarity, and matching content.
 
