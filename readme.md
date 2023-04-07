@@ -42,6 +42,7 @@
 - We will assess you based on several criteria, such as creativity, clarity, and matching content.
 
 - Note that you can refer to the previous posts on our Social Media to get an idea of how to complete the task. But you CAN NOT copy someone else's work and show them as your own.
+
 <br/>
 
 ## Content Writing
