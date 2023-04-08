@@ -1,4 +1,4 @@
-# Joke-SDK
+# [Joke-SDK](https://www.npmjs.com/package/joke-sdk)
 A simple API wrapper that pulls random jokes from 
 
 > Author: 5.H.4.D.0.W
