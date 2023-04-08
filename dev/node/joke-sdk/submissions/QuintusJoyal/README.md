@@ -1,7 +1,8 @@
 # [Joke-SDK](https://www.npmjs.com/package/joke-sdk)
-A simple API wrapper that pulls random jokes from 
 
 > Author: 5.H.4.D.0.W
+
+A simple API wrapper that pulls random jokes from 
 
  - https://official-joke-api.appspot.com/random_joke 
  ```json
@@ -23,16 +24,19 @@ A simple API wrapper that pulls random jokes from
 
 
 ## Example
+ ```bash
+ npm i joke-sdk
+ ```
  
  ```js
  const jokeAPI = require('joke-sdk');
 
  jokeAPI.getRandomJoke()
  	.then(j => console.log(`Random Joke : \n${j.setup}\n${j.punchline}`))
-	.catch(e => console.error(e));
+ 	.catch(e => console.error(e));
 
  jokeAPI.getRandomDadJoke()
-	.then(dj => console.log(`\nRandom Dad Joke : \n${dj.joke}`))
-	.catch(e => console.error(e));
+ 	.then(dj => console.log(`\nRandom Dad Joke : \n${dj.joke}`))
+ 	.catch(e => console.error(e));
 
  ```
