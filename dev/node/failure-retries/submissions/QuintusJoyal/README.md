@@ -5,18 +5,16 @@
 
 2. `retry.js` is a program that reads a JSON file named `tasks.json` and retries the failed tasks that have failed less than 3 times. The program only runs the tasks that are marked as "retryable" in the JSON file.
 
-3. `cleanLog.js` is a program that cleans up the tasks.json file by removing any null values.
-
-4. `tasks.json` is the log file.
+3. `tasks.json` is the log file.
 ```json
 {
 		// contains completed task IDs
 		"completed": {
-				"succeeded": [], // succeeded IDs
-				"failed": [] // failed IDs
+				"succeeded": [], // set of succeeded IDs
+				"failed": [] // set of failed IDs
 		},
 		// contains task fail counts
-		"retryable": []
+		"retryable": [] // map (id, failCount)
 }
 ```
 
@@ -32,10 +30,5 @@ node runner.js
 Retry the less than 3 times failed tasks by
 ```
 node retry.js
-```
-
-Clean the final log of nulls by
-```
-node cleanLog.js
 ```
 

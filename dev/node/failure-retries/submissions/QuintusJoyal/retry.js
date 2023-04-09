@@ -1,33 +1,21 @@
-const fs = require('fs');
+const { logStatus, readTasksFromFile, writeTasksToFile } = require('./components');
 
-let task = {};
+let tasks = {};
 
-const logStatus = (taskId, status) => {
-    console.log(`Task ${taskId} ${status}`);
-    tasks.completed[status][taskId] = taskId;
-    tasks.retryable[taskId] = null;
-};
-
-(async () => {
-    tasks = JSON.parse(fs.readFileSync('tasks.json'));
-    for (const retryable of tasks.retryable) {
-        if (!retryable) continue;
-        const id = retryable.id;
-        let retryCount = retryable.fails + 1;
-
-        while (retryCount <= 3) {
-            if (Math.random() < 0.5) {
-                logStatus(id, 'succeeded');
-                break;
-            } else {
-                ++retryCount;
-            }
+setInterval(async () => {
+    tasks = readTasksFromFile();
+    for (let [id, fails] of tasks.retryable) {
+        if (Math.random() < 0.5) {
+            logStatus(tasks, id, 'succeeded');
+            break;
+        } else {
+            ++fails;
         }
 
-        if (retryCount > 3) {
-            logStatus(id, 'failed');
+        if (fails > 3) {
+            logStatus(tasks, id, 'failed');
         }
     }
 
-    fs.writeFileSync('tasks.json', JSON.stringify(tasks, null, 2));
-})();
+    writeTasksToFile(tasks);
+}, 2000);
