@@ -5,25 +5,25 @@ import './styles.css';
 
 const ImgAndDesc = ({ desc, first, imgAlt, imgSrc, title }) => {
   return (
-    <Container className="mt-5">
+    <Container className="mt-5 p-5" fluid>
       <Row>
         {first === 'image' ? (
           <>
-            <Col md={4}>
+            <Col md={5}>
               <img className="heroImg" src={imgSrc} alt={imgAlt} />
             </Col>
-            <Col md={8}>
+            <Col md={7}>
               <h3 className="heroTitle">{title}</h3>
               <p className="heroDesc">{desc}</p>
             </Col>
           </>
         ) : (
           <>
-            <Col md={8}>
+            <Col md={{ span: 8, order: 'first' }} xs={{ order: 'last' }}>
               <h3 className="heroTitle">{title}</h3>
               <p className="heroDesc">{desc}</p>
             </Col>
-            <Col md={4}>
+            <Col md={{ span: 4, order: 'last' }} xs={{ order: 'first' }}>
               <img className="heroImg" src={imgSrc} alt={imgAlt} />
             </Col>
           </>

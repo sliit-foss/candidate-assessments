@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .App {
   text-align: center;
 }
@@ -44,4 +46,13 @@
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   font-size: 3rem;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+:root {
+  --purple: #5449cc;
+  --white: #ffffff;
 }

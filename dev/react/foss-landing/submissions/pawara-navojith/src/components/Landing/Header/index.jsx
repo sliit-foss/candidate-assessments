@@ -1,13 +1,24 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../../../assets/Landing/FOSS-logo.webp';
+import logo1 from '../../../assets/Landing/FOSS-logo.webp';
+import logo2 from '../../../assets/Landing/logo-dark.webp';
 import './styles.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Header = () => {
   const [selected, setSelected] = useState(['underline']);
+  const [logo, setLogo] = useState(logo1);
 
+  useEffect(() => {
+    window.onscroll = function () {
+      if (window.pageYOffset === 0) {
+        setLogo(logo1);
+      } else {
+        setLogo(logo2);
+      }
+    };
+  });
   const handleClick = (index) => {
     const s = [];
     for (let i = 0; i < 7; i++) {
@@ -18,16 +29,25 @@ const Header = () => {
       }
     }
     setSelected(s);
-    console.log(selected);
   };
 
   return (
-    <Navbar className="p-4" collapseOnSelect expand="lg">
+    <Navbar
+      className={
+        logo === logo1 ? 'navbar-header p-4' : 'navbar-header navbar-shadow p-4'
+      }
+      collapseOnSelect
+      expand="lg"
+    >
       <Container fluid>
         <Navbar.Brand href="#home">
           <img
             src={logo}
-            className="d-inline-block foss-logo align-top m-0"
+            className={
+              logo === logo1
+                ? 'd-inline-block foss-logo1 align-top m-0'
+                : 'd-inline-block foss-logo2 align-top '
+            }
             alt="React Bootstrap logo"
           />
         </Navbar.Brand>
