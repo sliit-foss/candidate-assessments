@@ -10,7 +10,7 @@ const Hero = ({ btnLink, btnText, desc, imgAlt, imgSrc, title }) => {
     navigate(btnLink);
   };
   return (
-    <Container className="mt-5 p-3" fluid>
+    <Container className="mt-5 p-5" fluid>
       <Row>
         <Col md={6}>
           <h3 className="L-heroTitle">{title}</h3>

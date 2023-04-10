@@ -3,10 +3,11 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Hero from '../components/Landing/Hero';
 import { HeroSec } from '../assets/Landing/data/Landing/hero';
+import WhatWeDo from '../components/Landing/WhatWeDo';
 
 const Landing = () => {
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <Hero
           btnLink={HeroSec.btnLink}
@@ -16,6 +17,9 @@ const Landing = () => {
           imgSrc={HeroSec.imgSrc}
           title={HeroSec.title}
         />
+      </Row>
+      <Row>
+        <WhatWeDo />
       </Row>
     </Container>
   );

@@ -55,5 +55,6 @@ body {
 :root {
   --purple: #5449cc;
   --white: #ffffff;
-  --text-primary: #343a40;
+  --text-color-primary: #343a40;
+  --background-color-secondary: #f4f4f4;
 }

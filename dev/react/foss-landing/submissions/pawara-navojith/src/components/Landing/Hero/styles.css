@@ -5,6 +5,7 @@
   margin-bottom: 1rem;
   background: linear-gradient(135deg, #667eea, #764ba2);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: start;
 }
@@ -28,5 +29,6 @@
 }
 
 .L-heroImg {
-  width: 100%;
+  margin-top: -3rem;
+  width: 85%;
 }
