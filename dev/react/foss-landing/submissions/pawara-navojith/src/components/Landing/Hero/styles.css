@@ -29,6 +29,12 @@
 }
 
 .L-heroImg {
-  margin-top: -3rem;
   width: 85%;
+}
+
+@media screen and (min-width: 768px) {
+  .L-heroImg {
+    margin-top: -3rem;
+    width: 85%;
+  }
 }

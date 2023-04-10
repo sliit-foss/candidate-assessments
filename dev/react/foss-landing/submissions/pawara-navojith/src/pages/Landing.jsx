@@ -4,6 +4,13 @@ import Container from 'react-bootstrap/Container';
 import Hero from '../components/Landing/Hero';
 import { HeroSec } from '../assets/Landing/data/Landing/hero';
 import WhatWeDo from '../components/Landing/WhatWeDo';
+import ImgAndDesc from '../components/About/ImgAndDesc';
+import {
+  mascotAlt,
+  mascotDesc,
+  mascotImg,
+  mascotTitle,
+} from '../assets/Landing/data/Landing/mascot';
 
 const Landing = () => {
   return (
@@ -20,6 +27,16 @@ const Landing = () => {
       </Row>
       <Row>
         <WhatWeDo />
+      </Row>
+      <Row>
+        <ImgAndDesc
+          desc={mascotDesc}
+          imgAlt={mascotAlt}
+          id={'mascot'}
+          imgSrc={mascotImg}
+          first={'image'}
+          title={mascotTitle}
+        />
       </Row>
     </Container>
   );
