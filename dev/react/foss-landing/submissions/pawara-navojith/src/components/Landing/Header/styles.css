@@ -1,0 +1,15 @@
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 250px;
+}
+
+.nav-link {
+  color: #5449cc !important;
+}
+
+.underline {
+  font-weight: bold !important;
+  border-bottom: 3px solid #5449cc;
+}
