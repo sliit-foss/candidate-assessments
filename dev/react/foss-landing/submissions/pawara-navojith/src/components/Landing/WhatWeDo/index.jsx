@@ -9,7 +9,7 @@ import './style.css';
 const WhatWeDo = () => {
   return (
     <Container id="wwd">
-      <Row className="mt-3">
+      <Row className="mt-3 p-5">
         <Col md={8} className="mx-auto">
           <h2 id="wwdTitle">{wwdTitle}</h2>
           <p id="wwdDesc">{wwdDesc}</p>
