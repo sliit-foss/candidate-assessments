@@ -1,0 +1,15 @@
+.heroTitle {
+  font-weight: bold;
+  text-align: left;
+  color: #5a5af3;
+}
+
+.heroDesc {
+  font-size: 1rem;
+
+  text-align: left !important;
+}
+
+.heroImg {
+  width: 100%;
+}

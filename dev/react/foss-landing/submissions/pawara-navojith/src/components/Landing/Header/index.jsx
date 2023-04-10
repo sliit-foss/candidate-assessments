@@ -6,7 +6,7 @@ import './styles.css';
 import { useState } from 'react';
 
 const Header = () => {
-  const [selected, setSelected] = useState([]);
+  const [selected, setSelected] = useState(['underline']);
 
   const handleClick = (index) => {
     const s = [];
@@ -27,7 +27,7 @@ const Header = () => {
         <Navbar.Brand href="#home">
           <img
             src={logo}
-            className="d-inline-block align-top m-0"
+            className="d-inline-block foss-logo align-top m-0"
             alt="React Bootstrap logo"
           />
         </Navbar.Brand>
