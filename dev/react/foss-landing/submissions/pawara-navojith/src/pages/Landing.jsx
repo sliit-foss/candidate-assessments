@@ -11,6 +11,7 @@ import {
   mascotImg,
   mascotTitle,
 } from '../assets/Landing/data/Landing/mascot';
+import ClubInfo from '../components/Landing/ClubInfo/ClubInfo';
 
 const Landing = () => {
   return (
@@ -37,6 +38,9 @@ const Landing = () => {
           first={'image'}
           title={mascotTitle}
         />
+      </Row>
+      <Row>
+        <ClubInfo />
       </Row>
     </Container>
   );
