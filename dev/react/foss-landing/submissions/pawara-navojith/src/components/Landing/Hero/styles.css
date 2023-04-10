@@ -1,0 +1,32 @@
+.L-heroTitle {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: normal !important;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: start;
+}
+
+.L-heroDesc {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: var(--text-primary);
+  text-align: justify;
+}
+.L-heroBtn {
+  background: #5a5af3;
+  color: #fff;
+  border: 2px solid #5a5af3;
+  margin-right: 10px;
+  border-radius: 50px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  display: block;
+  padding: 8px 20px 9px;
+}
+
+.L-heroImg {
+  width: 100%;
+}
