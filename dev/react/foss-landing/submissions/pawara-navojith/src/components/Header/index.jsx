@@ -1,35 +1,31 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo1 from '../../../assets/Landing/FOSS-logo.webp';
-import logo2 from '../../../assets/Landing/logo-dark.webp';
+import logo1 from '../../assets/Landing/FOSS-logo.webp';
+import logo2 from '../../assets/Landing/logo-dark.webp';
 import './styles.css';
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
-  const [selected, setSelected] = useState(['underline']);
   const [logo, setLogo] = useState(logo1);
+  const location = useLocation();
+  const [url, setUrl] = useState(null);
+
+  useEffect(() => {
+    setUrl(location.pathname);
+  }, [location]);
 
   useEffect(() => {
     window.onscroll = function () {
       if (window.pageYOffset === 0) {
         setLogo(logo1);
+        console.log(window.location.pathname);
       } else {
         setLogo(logo2);
       }
     };
   });
-  const handleClick = (index) => {
-    const s = [];
-    for (let i = 0; i < 7; i++) {
-      if (i === index) {
-        s[index] = 'underline';
-      } else {
-        s[i] = '';
-      }
-    }
-    setSelected(s);
-  };
 
   return (
     <Navbar
@@ -40,7 +36,7 @@ const Header = () => {
       expand="lg"
     >
       <Container fluid>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             src={logo}
             className={
@@ -55,44 +51,38 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link
-              href="#"
-              className={selected[0]}
-              onClick={() => handleClick(0)}
+              href="/"
+              className={url === '/' ? 'underline active' : ''}
             >
               HOME
             </Nav.Link>
             <Nav.Link
-              href="#"
-              className={selected[1]}
-              onClick={() => handleClick(1)}
+              href="/about"
+              className={url === '/about' ? 'underline active' : ''}
             >
               ABOUT
             </Nav.Link>
             <Nav.Link
-              href="#"
-              className={selected[2]}
-              onClick={() => handleClick(2)}
+              href="/events"
+              className={url === '/events' ? 'underline active' : ''}
             >
               EVENTS
             </Nav.Link>
             <Nav.Link
-              href="#"
-              className={selected[3]}
-              onClick={() => handleClick(3)}
+              href="board"
+              className={url === '/board' ? 'underline active' : ''}
             >
               BOARD
             </Nav.Link>
             <Nav.Link
-              href="#"
-              className={selected[4]}
-              onClick={() => handleClick(4)}
+              href="blogs"
+              className={url === '/blogs' ? 'underline active' : ''}
             >
               BLOGS
             </Nav.Link>
             <Nav.Link
-              href="#"
-              className={selected[5]}
-              onClick={() => handleClick(5)}
+              href="/contact"
+              className={url === '/contact' ? 'underline active' : ''}
             >
               CONTACT
             </Nav.Link>
