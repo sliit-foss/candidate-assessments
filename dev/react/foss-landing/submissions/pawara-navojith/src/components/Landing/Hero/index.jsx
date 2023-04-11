@@ -1,6 +1,3 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import './styles.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,20 +7,22 @@ const Hero = ({ btnLink, btnText, desc, imgAlt, imgSrc, title }) => {
     navigate(btnLink);
   };
   return (
-    <Container className="mt-5 p-5" fluid>
-      <Row>
-        <Col md={6}>
+    <div className="p-[2rem] md:p-[3rem] lg:p-[5rem]">
+      <div className="grid p-[15px] grid-cols-1 min-[768px]:grid-cols-2 gap-4">
+        <div className="my-auto">
           <h3 className="L-heroTitle">{title}</h3>
-          <p className="L-heroDesc">{desc}</p>
+          <br />
+          <p className="L-heroDesc mb-[12px]">{desc}</p>
+          <br />
           <button className="L-heroBtn" onClick={handleClick}>
             {btnText}
           </button>
-        </Col>
-        <Col md={6}>
-          <img className="L-heroImg" src={imgSrc} alt={imgAlt} />
-        </Col>
-      </Row>
-    </Container>
+        </div>
+        <div className="text-center min-[768px]:p-[3rem]">
+          <img className="L-heroImg lg:p-[15px]" src={imgSrc} alt={imgAlt} />
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -15,8 +15,8 @@ import ClubInfo from '../components/Landing/ClubInfo/ClubInfo';
 
 const Landing = () => {
   return (
-    <Container fluid>
-      <Row>
+    <div>
+      <div>
         <Hero
           btnLink={HeroSec.btnLink}
           btnText={HeroSec.btnText}
@@ -25,11 +25,11 @@ const Landing = () => {
           imgSrc={HeroSec.imgSrc}
           title={HeroSec.title}
         />
-      </Row>
-      <Row>
+      </div>
+      <div>
         <WhatWeDo />
-      </Row>
-      <Row>
+      </div>
+      <div>
         <ImgAndDesc
           desc={mascotDesc}
           imgAlt={mascotAlt}
@@ -38,11 +38,11 @@ const Landing = () => {
           first={'image'}
           title={mascotTitle}
         />
-      </Row>
-      <Row>
+      </div>
+      <div>
         <ClubInfo />
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 };
 

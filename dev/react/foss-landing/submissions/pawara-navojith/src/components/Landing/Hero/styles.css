@@ -19,22 +19,17 @@
 .L-heroBtn {
   background: #5a5af3;
   color: #fff;
-  border: 2px solid #5a5af3;
   margin-right: 10px;
   border-radius: 50px;
   font-size: 15px;
   letter-spacing: 0.5px;
   display: block;
   padding: 8px 20px 9px;
-}
-
-.L-heroImg {
-  width: 85%;
+  width: auto;
 }
 
 @media screen and (min-width: 768px) {
   .L-heroImg {
     margin-top: -3rem;
-    width: 85%;
   }
 }
