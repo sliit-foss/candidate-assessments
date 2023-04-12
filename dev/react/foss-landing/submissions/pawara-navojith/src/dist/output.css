@@ -911,6 +911,14 @@ body {
     grid-column: span 7 / span 7;
   }
 
+  .min-\[768px\]\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
+  .min-\[768px\]\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
   .min-\[768px\]\:mt-\[-3rem\]{
     margin-top: -3rem;
   }
@@ -935,6 +943,10 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .min-\[768px\]\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .min-\[768px\]\:p-\[15px\]{
     padding: 15px;
   }
@@ -951,11 +963,23 @@ body {
   .min-\[768px\]\:pr-\[2rem\]{
     padding-right: 2rem;
   }
+
+  .min-\[768px\]\:pb-0{
+    padding-bottom: 0px;
+  }
+
+  .min-\[768px\]\:pb-\[0px\]{
+    padding-bottom: 0px;
+  }
 }
 
 @media (min-width: 992px){
   .min-\[992px\]\:p-20{
     padding: 5rem;
+  }
+
+  .min-\[992px\]\:pb-0{
+    padding-bottom: 0px;
   }
 }
 
