@@ -625,6 +625,18 @@ video {
   margin-top: 5px;
 }
 
+.mt-\[1rem\]{
+  margin-top: 1rem;
+}
+
+.mt-4{
+  margin-top: 1rem;
+}
+
+.mt-\[2rem\]{
+  margin-top: 2rem;
+}
+
 .flex{
   display: flex;
 }
