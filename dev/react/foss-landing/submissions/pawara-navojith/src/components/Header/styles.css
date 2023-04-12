@@ -23,6 +23,9 @@
   background-color: var(--white);
 }
 .nav-link {
+  font-size: 14px !important;
+  margin: 0 15px;
+  text-decoration: none !important;
   color: var(--purple) !important;
 }
 

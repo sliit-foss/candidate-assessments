@@ -20,7 +20,6 @@ const Header = () => {
     window.onscroll = function () {
       if (window.pageYOffset === 0) {
         setLogo(logo1);
-        console.log(window.location.pathname);
       } else {
         setLogo(logo2);
       }
@@ -49,7 +48,7 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto md:p-[8]">
             <Nav.Link
               href="/"
               className={url === '/' ? 'underline active' : ''}
