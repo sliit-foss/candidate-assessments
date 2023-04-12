@@ -35,12 +35,12 @@ const Header = () => {
       expand="lg"
     >
       <Container fluid>
-        <Navbar.Brand href="/">
+        <Navbar.Brand className="mt-[10px] pb-0" href="/">
           <img
             src={logo}
             className={
               logo === logo1
-                ? 'd-inline-block foss-logo1 align-top m-0'
+                ? 'd-inline-block foss-logo1 align-top m-0 '
                 : 'd-inline-block foss-logo2 align-top '
             }
             alt="React Bootstrap logo"
