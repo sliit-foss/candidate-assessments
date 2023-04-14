@@ -1,8 +1,4 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
 import Card from './Card';
-import './style.css';
-import Col from 'react-bootstrap/esm/Col';
 
 const ClubInfo = () => {
   return (

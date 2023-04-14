@@ -1,8 +1,3 @@
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import './styles.css';
-
 const ImgAndDesc = ({ desc, id, first, imgAlt, imgSrc, title }) => {
   return (
     <div className="my-[1rem] max-[575px]:px-4 max-[575px]:py-8 min-[576px]:p-8 md:p-12 min-[992px]:p-20 min-[768px]:pb-0 min-[992px]:pb-0 ">

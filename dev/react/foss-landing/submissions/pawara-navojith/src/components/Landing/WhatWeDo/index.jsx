@@ -1,11 +1,8 @@
-import Container from 'react-bootstrap/esm/Container';
-import Row from 'react-bootstrap/esm/Row';
-import Col from 'react-bootstrap/esm/Col';
 import {
   wwdDesc,
   wwdTitle,
 } from '../../../assets/Landing/data/Landing/whatWeDo';
-import './style.css';
+
 const WhatWeDo = () => {
   return (
     <div className="bg-[var(--background-color-secondary)] max-[575px]:px-4 max-[575px]:py-8 min-[576px]:p-8 md:p-12 min-[992px]:p-20">
