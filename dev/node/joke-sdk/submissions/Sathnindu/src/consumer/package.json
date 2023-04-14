@@ -1,0 +1,18 @@
+{
+  "name": "consumer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "consumer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon \"consumer.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sathnindu/joke-sdk": "^1.0.0",
+    "axios": "^1.3.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
