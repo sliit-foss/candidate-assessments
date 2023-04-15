@@ -1,0 +1,35 @@
+{
+  "name": "mail-forwarder",
+  "version": "1.0.0",
+  "description": "This application will send the email written in HTMl to the provided list of recipients and also will track whether the recipients have clicked the (github repository)link provided in the mail.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/probablyshabina/node-mail-forwarder.git"
+  },
+  "keywords": [
+    "nodemailer",
+    "node",
+    "nodejs",
+    "gmail"
+  ],
+  "author": "Shabina Farveen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/probablyshabina/node-mail-forwarder/issues"
+  },
+  "homepage": "https://github.com/probablyshabina/node-mail-forwarder#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "mongoose": "^7.0.3",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.22"
+  }
+}
