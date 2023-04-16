@@ -3,11 +3,11 @@ import { createRecipient, getAllSentRecipients, sentUpdateReciepient, getAllReci
 const router = express.Router();
 
 router.route('/').get(getAllRecipients);
+router.route('/:id').get(getRecipient);
+router.route('/sent/all').get(getAllSentRecipients);
 router.route('/click/:id').put(clickUpdateReciepient);
 router.route('/sent/:id').put(sentUpdateReciepient);
 router.route('/:id').put(updateReciepient);
-router.route('/:id').get(getRecipient);
 router.route('/add').post(createRecipient);
-router.route('/sent/all').get(getAllSentRecipients);
 
 export default router;

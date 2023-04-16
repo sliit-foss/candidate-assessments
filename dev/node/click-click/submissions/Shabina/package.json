@@ -2,10 +2,11 @@
   "name": "mail-forwarder",
   "version": "1.0.0",
   "description": "This application will send the email written in HTMl to the provided list of recipients and also will track whether the recipients have clicked the (github repository)link provided in the mail.",
-  "main": "index.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "node index"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",

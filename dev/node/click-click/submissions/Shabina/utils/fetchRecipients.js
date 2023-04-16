@@ -1,8 +1,7 @@
 import { } from 'dotenv/config'
 import fs from 'fs'
+import path from 'path';
 import sendMail from './sendMail.js'
-
-console.log("Staring");
 
 async function sendMailsToRecipients() {
     await fetch('http://localhost:8000/api/v1/recipients/', {
@@ -21,7 +20,7 @@ async function sendMailsToRecipients() {
         .then(data => {
             data.recipients.map(recipient => {
                 var sendTo = recipient.email
-                let htmlContent = fs.readFileSync("./mail.html", "utf8");
+                let htmlContent = fs.readFileSync(path.resolve(process.cwd(),"templates/mail.html"), "utf8");
                 htmlContent = htmlContent.replace("{{name}}", `${recipient.name}`);
                 htmlContent = htmlContent.replace("{{link}}", `http://localhost:8000/api/v1/recipients/click/${recipient._id}`);
                 sendMail(recipient.email, htmlContent, recipient._id).catch(console.error);
@@ -32,4 +31,4 @@ async function sendMailsToRecipients() {
         });
 
 }
-sendMailsToRecipients();
+export default sendMailsToRecipients;

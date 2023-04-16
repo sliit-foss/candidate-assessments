@@ -3,6 +3,7 @@ import cors from 'cors';
 import router from './routes/mailForwarder.routes.js';
 import 'dotenv/config';
 import connectDB from './database/connect.js';
+import fetchRecipients from './utils/fetchRecipients.js';
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -17,3 +18,5 @@ connectDB();
 app.listen(port, () => {
 	console.log(`server is listening on port ${port}...`);
 });
+
+fetchRecipients();
