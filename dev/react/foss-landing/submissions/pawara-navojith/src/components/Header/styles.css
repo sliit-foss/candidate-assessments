@@ -1,0 +1,35 @@
+.foss-logo1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 250px;
+  opacity: 100;
+  transition: opacity 2s;
+}
+
+.navbar-shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.foss-logo2 {
+  max-width: 100px;
+  margin: -20px;
+}
+
+.navbar-header {
+  position: sticky !important;
+  top: 0;
+  width: 100%;
+  background-color: var(--white);
+}
+.nav-link {
+  font-size: 14px !important;
+  margin: 0 15px;
+  text-decoration: none !important;
+  color: var(--purple) !important;
+}
+
+.underline {
+  font-weight: bold !important;
+  border-bottom: 3px solid var(--purple);
+}
