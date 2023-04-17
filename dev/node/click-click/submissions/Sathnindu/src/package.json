@@ -1,0 +1,22 @@
+{
+  "name": "click-click",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon \"index.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "googleapis": "^115.0.0",
+    "is-empty": "^1.2.0",
+    "mongoose": "^7.0.3",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.22",
+    "validator": "^13.9.0"
+  }
+}
