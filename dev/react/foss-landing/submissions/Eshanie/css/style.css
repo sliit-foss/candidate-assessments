@@ -1,0 +1,322 @@
+body{
+    margin: 0;
+}
+
+.link-1 a:hover, .link-2 a:hover{
+    color:#5A5AF3;
+}
+
+h1{
+    font-family: 'roboto';
+    font-size: 2.5rem;
+    color:#5A5AF3;
+}
+
+p{
+    font-family: 'roboto';
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    color: #666;
+
+
+}
+
+.content{
+    padding: 0 120px;
+}
+
+
+
+
+/* about */
+.flex{
+    display:flex;
+}
+
+.about.left{
+    width: 70%;
+}
+
+.right img{
+    width: 70%;
+    padding-left: 70px;
+    
+    
+}
+
+button{
+    background-color: #5A5AF3;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    font-family: 'roboto';
+    font-size: 0.9rem;
+}
+
+button:hover{
+    background-color: #7575f8;
+    transition-duration: 1s;
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+}
+
+.work{
+    background-color: #f4f4f4;
+    
+}
+
+.center{
+    text-align: center;
+}
+
+/* Mascot */
+
+.mascot img{
+    width: 20%;
+    
+
+}
+
+
+    
+.Nif{
+    margin-right: 300px;
+    width: 80%;
+    margin-left: -200px;
+    
+}
+
+/* card section */
+.card{
+    background-color: #f1f1f1;
+    padding: 30px;
+    margin-right: 30px; 
+    border-radius: 30px;
+    color:rgb(138, 138, 138) !important;
+    line-height: 0.1rem;
+    font-size: 1.3rem;
+    padding-bottom: 40px;
+    font-family: 'roboto';
+    width: 40%;
+    transition-duration: 1s;
+
+}
+
+
+
+ .card:hover{
+    background-color: #5A5AF3;
+    color: white!important;
+} 
+
+
+
+
+
+
+/* Event */
+h2{
+    font-family: 'roboto';
+}
+
+.small p{
+    display: inline;
+    font-size:0.9rem;
+    
+}
+
+.container{
+    width: 300px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    word-wrap: break-word; 
+    padding-bottom: 25px;
+    background-color: white;
+    
+    
+}
+
+.container:hover{
+    filter: drop-shadow(2px 2px 8px #d9d9da);
+}
+
+.slider{
+    font-family: roboto;
+    height: 700px;
+    margin-left: 5px;
+    width: 95%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    
+}
+/* slide track width = total number of slides (9 x 2 = 18) x individual slide width(250px) */
+.slide-track{
+    display: flex;
+    width: calc(300px * 9); 
+    animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover{
+    animation-play-state: paused;
+}
+
+
+/* Moves the slide track leftward (-250px) by half (18images/2 = 9) of its width */
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+
+
+
+
+
+.slider::before,.slider::after{
+    background: linear-gradient(to right, rgba(168, 118, 10) 20%);
+    content:'';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before{
+    right: 0;
+    top: 0;
+}
+
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotatez(180deg);
+}
+
+.podcast{
+    background-image: url(../images/bg/podcast-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.phone-body{
+    width: 70%; 
+    margin-left: 260px;
+}
+
+.phone-body h2{
+    font-size: 4rem; 
+    margin-top: -30px; 
+    color: rgb(43, 43, 43);
+}
+
+.badge img{
+    margin-top:10px;
+    width: 17%;
+}
+
+.box{
+    background-color: #20a4cc;
+   display: inline;
+   padding: 3px 14px;
+   border-radius: 9px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+    color: white;
+    
+}
+
+/* links */
+.links{
+    background: url(../images/bg/backgrounbd.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    
+}
+
+.link-1, .link-2{
+    font-family: roboto;
+    color: rgb(228, 228, 228);
+}
+
+.link-1 a, .link-2 a{
+    text-decoration: none;
+    color: rgb(145, 145, 145);
+}
+
+.link-2 li{
+    padding-left: 50px;
+}
+.link-1 li, .link-2 li{
+    list-style-type: none;
+   margin-left: -40px;
+   margin-right: 30px;
+   padding-top: 10px;
+   font-size: 0.8rem;
+   white-space: nowrap;
+}
+
+.text-1{
+    margin-left: 120px;
+}
+
+.link-logo {
+    width: 15%;
+}
+
+
+
+
+.text-1 p{
+    font-size: 1rem;
+    width: 40%;
+    line-height: 25px;
+}
+
+.bold{
+    font-weight: bold;
+    color: white;
+    font-size: 1.2rem;
+}
+
+hr{
+    width: 55px; 
+    margin-left: 2px; 
+    border: 1.4px solid #5A5AF3;
+    margin-top: -10px;
+}
+
+
+
+.text-3 p{
+    font-size: 1rem;
+    margin-left: 30px;
+}
+
+.text-2{
+    margin-left: -450px;
+}
+
+.social img{
+    height:30px;
+    padding-right: 15px;
+}
+/* footer */
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+@media(max-width: 400px){
+    .flex{
+        flex-direction: column;
+    }
+
+    .about.left{
+        width: 110%;
+    }
+
+    .right img{
+        width: 120%;
+        margin-left: -90px;
+        margin-top: -80px;
+    }
+
+    .mascot img{
+        margin-left: 10px;
+        
+     }
+
+     .Nif{
+        width: 80%;
+        margin-right: 70px;
+        margin-left: 40px;
+    }
+
+    .dashboard{
+        margin-left: 5px;
+    }
+
+    .card{
+        width: 80%;
+        margin-bottom: 20px;
+        
+    }
+
+    .slider{
+        width: 120%;
+        margin-left: -20px;
+    }
+
+    .phone img{
+        width: 120%; 
+        margin-left: -20px;
+    }
+
+    .phone-body{
+        width: 120%; 
+        margin-left: -20px;
+        text-align: center;
+    }
+
+    .phone-body h1{
+        font-size:1.6rem; 
+        padding-bottom: 10px;
+    }
+
+    .phone-body h2{
+        font-size: 3rem; 
+        
+    }
+
+    .badge img{
+        margin-top:10px;
+        width: 45%;
+    }
+
+    .links {
+        margin-left: -40px;
+        
+    }
+    .link-2 li{
+        margin-left: -50px;
+    }
+
+    .text-3{
+        
+        margin-left: -10px;
+        width: 85%;
+        
+    } 
+
+    .copy{
+       
+        margin-left:-280px;
+    }
+
+    footer{
+        margin-top: -20px;
+        
+        
+    }
+}

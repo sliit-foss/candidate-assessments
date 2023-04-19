@@ -1,9 +1,13 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
     <head>
         <title>
             SLIIT FOSS Community
         </title>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,19 +17,23 @@
     
         
         
-        <link rel="stylesheet" href="style.css">
-        <script src= "function.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/head.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/tab.css">
+        <link rel="stylesheet" href="css/phone.css">
+        
 
         
         
     </head>
     <body>
         <div class="darklogo">
-            <img src="images/dark-logo.png" alt="" style="position: absolute; z-index: 3; margin-left: -20px; margin-top:-10px;">
+            <img src="images/element/dark-logo.png" alt="" >
         </div>
         <div class="navbar">
         <div class="nav">
-            <img src="images/logo.png" style="padding-left: 50px; ">
+            <img src="images/element/logo.png" >
 
         <!-- navbar -->
         <nav>
@@ -38,7 +46,27 @@
                 <li><a href="">CONTACT</a></li>
                 <li><a href=""><i class="fa fa-moon"></i></a></li>
             </ul>
-        </nav>
+        </nav> 
+
+        <!-- mobile -->
+        
+        <i class="fas fa-bars mobile-nav menu-icon"></i>
+        <i class="fa fa-moon mobile-nav "></i>
+            
+            
+
+        <div class="mobile-menu-container">
+
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">EVENTS</a></li>
+                <li><a href="">BOARD</a></li>
+                <li><a href="">BLOGS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+            
+        </div>
 
         </div>
     </div>
@@ -62,7 +90,7 @@
                  
     
                     <div class="right">
-                        <img src="images/img-member2.svg" alt="">
+                        <img src="images/element/img-member2.svg" alt="">
                     </div>
                 </div>
                 <br><br><br>
@@ -75,7 +103,7 @@
             <div class="content">
                 <br>
              <h1>What We Do?</h1>
-                <p>Contribute to society with inventions and innovative ideas that turn young lives to feel like part of the largest<br> developing population in the world. And mobilize the group through various partnerships and projects, such<br> as hackathons, meetups and various events related to technology and FOSS. </p>
+                <p>Contribute to society with inventions and innovative ideas that turn young lives to feel like part of the largest developing population in the world. And mobilize the group through various partnerships and projects, such as hackathons, meetups and various events related to technology and FOSS. </p>
                 <br>
           </div>
 
@@ -85,7 +113,7 @@
         <div class="center">
           <div class="flex">
              <div class="left mascot">
-                  <img src="images/mascot.png" alt="" >
+                  <img src="images/element/mascot.png" alt="" >
              </div>
 
              <div class="Nif">
@@ -100,11 +128,11 @@
 
           <!-- dashboard -->
         <div class="center">
-            <div class="content flex">
+            <div class="content flex dashboard">
                 
                 <div class="card active">
                     <div class="card-body">
-                        <i class="fas fa-calendar fa-4x" style="color:rgb(255, 255, 255);"></i>
+                        <i class="fas fa-calendar fa-4x" ></i>
                          <h2>7</h2> 
                           <span>Events</span>
                     </div>
@@ -114,7 +142,7 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <i class="fas fa-user fa-4x" style="color:rgb(139, 139, 139);"></i>
+                        <i class="fas fa-user fa-4x" ></i>
                          <h2>119</h2> 
                           <span>Members</span>
                     </div>
@@ -122,7 +150,7 @@
 
                 <div class="card">
                     <div class="card-body">
-                        <i class="fab fa-github fa-4x" style="color:rgb(139, 139, 139);" ></i>
+                        <i class="fab fa-github fa-4x" ></i>
                          <h2 >67</h2> 
                           <span>Projects</span>
                     </div>
@@ -130,7 +158,7 @@
 
                 <div class="card" style="margin-right: -30px">
                     <div class="card-body">
-                        <i class="fas fa-video fa-4x " style="color:rgb(139, 139, 139);"></i>
+                        <i class="fas fa-video fa-4x "></i>
                          <h2 style="margin-top: 18px;">12</h2> 
                           <span>Webniars</span>
                     </div>
@@ -147,188 +175,188 @@
         <div class="content">
             <div class="center" >
                 <h2>Past Events</h2>
-                <img src="images/line.png" alt="" style="margin-top: -10px">
+                <img src="images/slide/line.png" alt="" style="margin-top: -10px">
             
-            <div class="slider">
+            <div class="slider" style="margin-top: -50px;">
                 <div class="slide-track">
                     <div class="container" style="margin-right: 30px">
-                        <img src="images/event1.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
+                              <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                       <p style="color: black; font-weight: bold;">Event 1</p>
                        <div class="small">
-                             <img src="images/calendar.png" alt="">
+                             <img src="images/icon/calendar.png" alt="">
                              <p>date</p>
       
-                            <img src="images/location.png" alt="">
+                            <img src="images/icon/location.png" alt="">
                             <p>location</p>
                        </div>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                          <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                       <p style="line-height: 2rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                          <button><a href="">View</a></button>
                       </div>
       
                       <div class="container" style="margin-right: 30px">
-                          <img src="images/event1.PNG" alt="" style="width: 258px;">
-                         <h3>Event 1</h3>
+                          <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                         <p style="color: black; font-weight: bold;">Event 1</p>
                          <div class="small">
-                               <img src="images/calendar.png" alt="">
+                               <img src="images/icon/calendar.png" alt="">
                                <p>date</p>
         
-                              <img src="images/location.png" alt="">
+                              <img src="images/icon/location.png" alt="">
                               <p>location</p>
                          </div>
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                            <button><a href="">View</a></button>
                         </div>
                         <div class="container" style="margin-right: 30px">
-                          <img src="images/event1.PNG" alt="" style="width: 258px;">
-                         <h3>Event 1</h3>
+                          <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                         <p style="color: black; font-weight: bold;">Event 1</p>
                          <div class="small">
-                               <img src="images/calendar.png" alt="">
+                               <img src="images/icon/calendar.png" alt="">
                                <p>date</p>
         
-                              <img src="images/location.png" alt="">
+                              <img src="images/icon/location.png" alt="">
                               <p>location</p>
                          </div>
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                            <button><a href="">View</a></button>
                         </div>
       
                         <div class="container" style="margin-right: 30px;">
-                          <img src="images/event1.PNG" alt="" style="width: 258px;">
-                         <h3>Event 1</h3>
+                          <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                         <p style="color: black; font-weight: bold;">Event 1</p>
                          <div class="small">
-                               <img src="images/calendar.png" alt="">
+                               <img src="images/icon/calendar.png" alt="">
                                <p>date</p>
         
-                              <img src="images/location.png" alt="">
+                              <img src="images/icon/location.png" alt="">
                               <p>location</p>
                          </div>
                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                            <button><a href="">View</a></button>
                         </div>
 
                         <div class="container" style="margin-right: 30px">
-                            <img src="images/event1.PNG" alt="" style="width: 258px;">
-                           <h3>Event 1</h3>
+                            <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                           <p style="color: black; font-weight: bold;">Event 1</p>
                            <div class="small">
-                                 <img src="images/calendar.png" alt="">
+                                 <img src="images/icon/calendar.png" alt="">
                                  <p>date</p>
           
-                                <img src="images/location.png" alt="">
+                                <img src="images/icon/location.png" alt="">
                                 <p>location</p>
                            </div>
                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                              <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                              <button><a href="">View</a></button>
                           </div>
           
                           <div class="container" style="margin-right: 30px">
-                              <img src="images/event1.PNG" alt="" style="width: 258px;">
-                             <h3>Event 1</h3>
+                              <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                             <p style="color: black; font-weight: bold;">Event 1</p>
                              <div class="small">
-                                   <img src="images/calendar.png" alt="">
+                                   <img src="images/icon/calendar.png" alt="">
                                    <p>date</p>
             
-                                  <img src="images/location.png" alt="">
+                                  <img src="images/icon/location.png" alt="">
                                   <p>location</p>
                              </div>
                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                                <button><a href="">View</a></button>
                             </div>
                             <div class="container" style="margin-right: 30px">
-                              <img src="images/event1.PNG" alt="" style="width: 258px;">
-                             <h3>Event 1</h3>
+                              <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                              <p style="color: black; font-weight: bold;">Event 1</p>
                              <div class="small">
-                                   <img src="images/calendar.png" alt="">
+                                   <img src="images/icon/calendar.png" alt="">
                                    <p>date</p>
             
-                                  <img src="images/location.png" alt="">
+                                  <img src="images/icon/location.png" alt="">
                                   <p>location</p>
                              </div>
                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                                <button><a href="">View</a></button>
                             </div>
           
                             <div class="container" style="margin-right: 30px;">
-                              <img src="images/event1.PNG" alt="" style="width: 258px;">
-                             <h3>Event 1</h3>
+                              <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                              <p style="color: black; font-weight: bold;">Event 1</p>
                              <div class="small">
-                                   <img src="images/calendar.png" alt="">
+                                   <img src="images/icon/calendar.png" alt="">
                                    <p>date</p>
             
-                                  <img src="images/location.png" alt="">
+                                  <img src="images/icon/location.png" alt="">
                                   <p>location</p>
                              </div>
                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                                <button><a href="">View</a></button>
                             </div>
 
                             <div class="container" style="margin-right: 30px;">
-                                <img src="images/event1.PNG" alt="" style="width: 258px;">
-                               <h3>Event 1</h3>
+                                <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                                <p style="color: black; font-weight: bold;">Event 1</p>
                                <div class="small">
-                                     <img src="images/calendar.png" alt="">
+                                     <img src="images/icon/calendar.png" alt="">
                                      <p>date</p>
               
-                                    <img src="images/location.png" alt="">
+                                    <img src="images/icon/location.png" alt="">
                                     <p>location</p>
                                </div>
                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                  <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                                  <button><a href="">View</a></button>
                               </div>
 
                               <div class="container" style="margin-right: 30px;">
-                                <img src="images/event1.PNG" alt="" style="width: 258px;">
-                               <h3>Event 1</h3>
+                                <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                                <p style="color: black; font-weight: bold;">Event 1</p>
                                <div class="small">
-                                     <img src="images/calendar.png" alt="">
+                                     <img src="images/icon/calendar.png" alt="">
                                      <p>date</p>
               
-                                    <img src="images/location.png" alt="">
+                                    <img src="images/icon/location.png" alt="">
                                     <p>location</p>
                                </div>
                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                  <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                                  <button><a href="">View</a></button>
                               </div>
 
                               <div class="container" style="margin-right: 30px;">
-                                <img src="images/event1.PNG" alt="" style="width: 258px;">
-                               <h3>Event 1</h3>
+                                <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                                <p style="color: black; font-weight: bold;">Event 1</p>
                                <div class="small">
-                                     <img src="images/calendar.png" alt="">
+                                     <img src="images/icon/calendar.png" alt="">
                                      <p>date</p>
               
-                                    <img src="images/location.png" alt="">
+                                    <img src="images/icon/location.png" alt="">
                                     <p>location</p>
                                </div>
                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                  <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                                  <button><a href="">View</a></button>
                               </div>
 
                               <div class="container" style="margin-right: 30px;">
-                                <img src="images/event1.PNG" alt="" style="width: 258px;">
-                               <h3>Event 1</h3>
+                                <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                                <p style="color: black; font-weight: bold;">Event 1</p>
                                <div class="small">
-                                     <img src="images/calendar.png" alt="">
+                                     <img src="images/icon/calendar.png" alt="">
                                      <p>date</p>
               
-                                    <img src="images/location.png" alt="">
+                                    <img src="images/icon/location.png" alt="">
                                     <p>location</p>
                                </div>
                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                  <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                                  <button><a href="">View</a></button>
                               </div>
 
                               <div class="container" style="margin-right: 30px;">
-                                <img src="images/event1.PNG" alt="" style="width: 258px;">
-                               <h3>Event 1</h3>
+                                <img src="images/slide/event1.PNG" alt="" style="width: 258px;">
+                                <p style="color: black; font-weight: bold;">Event 1</p>
                                <div class="small">
-                                     <img src="images/calendar.png" alt="">
+                                     <img src="images/icon/calendar.png" alt="">
                                      <p>date</p>
               
-                                    <img src="images/location.png" alt="">
+                                    <img src="images/icon/location.png" alt="">
                                     <p>location</p>
                                </div>
                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                  <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                                  <button><a href="">View</a></button>
                               </div>
 
                          
@@ -343,93 +371,93 @@
                  </div>
             </div>
         </div>
-        <br><br><br><br><br><br>
+        <br><br>
 
          <!-- WEBINARS -->
          
          <div class="content">
             <div class="center" >
                 <h2>WEBINARS</h2>
-                <img src="images/line.png" alt="" style="margin-top: -10px">
+                <img src="images/slide/line.png" alt="" style="margin-top: -10px">
             
-            <div class="slider">
+            <div class="slider" style="margin-top: -120px;">
                 <div class="slide-track">
                     <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
         
                       <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
         
                         <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
         
                       <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
         
                       <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
           
                       <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
         
                      <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
           
                       <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
         
                       <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
         
                       <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
         
                       <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
         
                       <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
         
                       <div class="container" style="margin-right: 30px">
-                        <img src="images/webinar.PNG" alt="" style="width: 258px;">
-                       <h3>Event 1</h3>
-                       <button style="font-size: 0.9rem;"><a href="">View</a></button>
+                        <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                        <p style="color: black; font-weight: bold;">Event 1</p>
+                       <button><a href="">View</a></button>
                       </div>
 
                          
@@ -444,7 +472,7 @@
                  </div>
             </div>
         </div>
-        <br><br><br><br><br><br>
+        
 
          
 
@@ -453,22 +481,23 @@
             
             <div class="content flex">
                 <div class="phone">
-                    <img src="images/podcast.PNG" alt="">
+                    <img src="images/element/podcast.PNG" alt="">
     
                 </div>
 
-                <div class="phone-body" style="width: 70%; margin-left: 260px;">
-                    <h1 style="color: rgb(43, 43, 43);">SLIIT FOSS</h1>
-                    <h2 style="font-size: 5rem; margin-top: -20px; color: rgb(43, 43, 43);">PODCAST</h2>
+                <div class="phone-body">
+                    <h1 style="color: rgb(43, 43, 43); ">SLIIT FOSS</h1>
+                    <h2>PODCAST</h2>
                     <p style="margin-top: -50px;">Whether you’re itching to get out of lockdown, searching for your next job or struggling to find motivation at your current one - a reminder that SLIIT FOSSCAST is launching the first ever podcast episode speaking with a VERY influential FOSS enthusiast in Tech!</p>
 
                     <button><a href="">Listen Now</a></button>
+                    <br><br>
 
                     <div class="badge">
-                        <img src="images/download-(1).png" alt="">
-                        <img src="images/download-(2).png" alt="">
-                        <img src="images/download-(3).png" alt="">
-                        <img src="images/download.png" alt="">
+                        <img src="images/badge/download-(1).png" alt="">
+                        <img src="images/badge/download-(2).png" alt="">
+                        <img src="images/badge/download-(3).png" alt="">
+                        <img src="images/badge/download.png" alt="">
 
                     </div>
                 </div>
@@ -476,196 +505,196 @@
 
         </div> 
         
-        <br><br><br><br><br><br>
+        <br><br>
 <!-- LATEST BLOG POSTS -->
          
 <div class="content">
     <div class="center" >
         <h2>LATEST BLOG POSTS</h2>
-        <img src="images/line.png" alt="" style="margin-top: -10px">
+        <img src="images/slide/line.png" alt="" style="margin-top: -10px">
     
-    <div class="slider">
+    <div class="slider" style="margin-top: -80px;">
         <div class="slide-track">
             <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%;"><a href="">Read More</a></button>
               </div>
 
               <div class="container" style="margin-right: 30px">
-                <img src="images/webinar.PNG" alt="" style="width: 258px;">
-               <h3>Event 1</h3>
-               <div class="small">
+                <img src="images/slide/webinar.PNG" alt="" style="width: 258px;">
+                <p style="color: black; font-weight: bold;">Event 1</p>
+               <div class="small" style="margin-top:-20px;">
                 <p>Publish date </p>
           </div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <div class="box">lorem</div>
                <br><br>
-               <button style="width: 80%; font-size: 0.9rem;"><a href="">Read More</a></button>
+               <button style="width: 80%; "><a href="">Read More</a></button>
               </div>
               
               
@@ -687,22 +716,22 @@
          </div>
     </div>
 </div>
-<br><br><br><br><br><br>
+<br>
         
         <!-- footer -->
         <div class="links">
             <div class="content flex" style="padding-top: 20px;">
                 
                 <div class="text-1">
-                    <img src="images/logo-light.png" alt="" style="width: 15%;">
+                    <img src="images/logo-light.png" alt="" class="link-logo">
                     <p>Welcome to SLIIT FOSS community. We're a group of volunteers who believe in the usage of Free/Open Source Software (FOSS)</p>
                     <p class="bold">Connect with us</p>
-                    <div class="social" style="display: flex;">
-                        <img src="images/facebook.png" alt="" >
-                        <img src="images/instagram.png" alt="" >
-                        <img src="images/twitter.png" alt="" >
-                        <img src="images/linkedin.png" alt="">
-                        <img src="images/youtube.png" alt="">
+                    <div class="social">
+                        <img src="images/icon/facebook.png" alt="" >
+                        <img src="images/icon/instagram.png" alt="" >
+                        <img src="images/icon/twitter.png" alt="" >
+                        <img src="images/icon/linkedin.png" alt="">
+                        <img src="images/icon/youtube.png" alt="">
                     </div>
                 </div>
 
@@ -740,9 +769,13 @@
                     <p>Don’t forget to subscribe to our news letters, enter your e-mail here.</p>
                     
                     <form action="">
-                        <input type="email" placeholder="Your email">
-
-                        <button class="subscribe" ><img src="images/gmail.png" alt="" style="margin-top:-15px;  " ></button>
+                        <input type="email" placeholder="Your email" >
+                        
+                        
+                        <button class="subscibe"> <img src="images/icon/gmail.png" alt="" ></button>
+                        
+                        
+                        
                     </form>
                     
 
@@ -758,7 +791,7 @@
                     <p>Copyright © 2023 | All Rights Reserved <span style="color: #5A5AF3">SLIIT FOSS</span></p>
                 </div>
 
-                <div class="footer-nav">
+                <div class="footer-nav" >
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">Terms</a></li>
@@ -785,7 +818,8 @@
                  darklogo.classList.remove('fadeIn');
                 }
             }
-
+            
+            
             
            
             
