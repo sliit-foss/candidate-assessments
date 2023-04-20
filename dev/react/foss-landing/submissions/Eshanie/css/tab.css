@@ -1,0 +1,167 @@
+@media(max-width: 800px){
+    html, body{
+        padding: 0 ;
+        overflow-x: hidden;
+        margin: 0;
+        width: 100%;
+        
+        
+    }
+
+    .content{
+        padding: 0 60px;
+        
+    }
+    
+
+    nav{
+        display: none;
+    }
+   
+
+    
+
+    .mobile-nav{
+        display:block!important;
+        color: #5A5AF3;
+        z-index: 6;
+        float: right;
+        margin-right: 30px;
+        margin-top: 35px;
+        font-size: 30px;
+        
+    }
+
+    
+    .menu-icon{
+        cursor: pointer;
+    }
+
+    .mobile-menu-container.active {
+        height: 0; 
+        pointer-events: auto;
+    }
+    
+
+    .mobile-menu-container{
+        height: 0; 
+        display:block; 
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .mobile-menu-container li{
+        list-style: none;
+
+    }
+
+    .mobile-menu-container a{
+        text-decoration: none;
+        font-family: 'roboto';
+        font-size: 1.1rem;
+        color: #5A5AF3;
+        font-weight: bold;
+        line-height: 2.5rem;
+
+    }
+
+    .about.left{
+        width: 140%;
+    }
+
+    .right img{
+        padding-top: 160px;
+    }
+
+    .mascot img{
+       margin-left: -180px;
+       padding-top: 50px;
+       width: 35%;
+    }
+    
+    .Nif{
+        width: 240%;
+        margin-right: 70px;
+        margin-left: -230px;
+    }
+
+    .dashboard{
+        margin-left: -20px;
+    }
+
+    .card{
+        width: 20%;
+        
+    }
+
+    .slider{
+        width: 98%;
+    }
+
+    .phone-body{
+        width: 70%; 
+        margin-left: 60px;
+    }
+    
+    .badge img{
+       width: 37%;
+       margin-top: -6px;
+    }
+
+    .links .content, .text-2, .text-3{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        overflow-x: hidden;
+        
+    }
+    .text-1{
+        order:-1;
+        flex: 1 100%;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        
+        
+    }
+
+    .text-1 p{
+        width:80%;
+
+    }
+
+    .text-2{
+        order:1;
+        margin-left: 20px;
+        flex: 1;
+        margin-bottom: 30px;
+    }
+
+    .link-2 li{
+        padding-left: 10px;
+    }
+
+    .text-3{
+        
+        order:2;
+        width: 45%;
+        flex: 1;
+        margin-bottom: 30px;
+    } 
+    
+    .footer-nav li{
+        display: none;
+    }
+
+    .copy{
+        margin-left:-120px;
+    }
+
+    
+    
+
+    
+    
+    
+}

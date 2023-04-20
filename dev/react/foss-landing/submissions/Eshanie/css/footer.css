@@ -1,0 +1,53 @@
+footer{
+    background-color: black;
+    
+    
+}
+
+footer, .copy p{
+   font-size: 0.9rem;
+   padding-left: 150px;
+   color: white;
+   
+}
+
+.footer-nav a:hover{
+    color: #5A5AF3;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    font-family: roboto;
+    padding-right: 20px;
+    color: white;
+    font-size: 0.9rem;
+    
+    
+}
+.footer-nav{
+    margin-left: 30px;
+    padding-top: 8px;
+}
+
+.footer-nav li{
+    display: inline;
+    
+}
+
+form input{
+    padding:16.5px;
+    margin-left: 30px;
+    background-color: rgb(51, 51, 51);
+    border: none;
+    outline: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    
+}
+
+.subscibe{
+    position: absolute;
+    margin-left: -20px;
+    border-radius: 0;
+}
