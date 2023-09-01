@@ -3,7 +3,7 @@ import "dart:math";
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:todo_application/Class/todo.dart';
+import 'package:todo_application/models/todo.dart';
 import 'package:todo_application/Constants/colors.dart';
 import 'package:todo_application/screens/view_todo.dart';
 
