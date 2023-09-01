@@ -1,11 +1,9 @@
-//Declare Todo class attributes
 class Todo {
   int id;
   String title;
   String description;
   bool status;
 
-  //Constructor
   Todo(
       {required this.id,
       required this.title,
@@ -17,16 +15,9 @@ class Todo {
     status = this.status;
   }
 
-  //Constructor that convert json to object instance
-  fromJson(jsonData) {
-    return Todo(
-        id: jsonData['id'],
-        title: jsonData['title'],
-        description: jsonData['description'],
-        status: jsonData['status']);
-  }
+  static fromJson(jsonData) async =>
+      Todo(id: null!, title: '', description: '', status: null!);
 
-  // Method to convert object to json string
   toJson() {
     return {
       "id": id,

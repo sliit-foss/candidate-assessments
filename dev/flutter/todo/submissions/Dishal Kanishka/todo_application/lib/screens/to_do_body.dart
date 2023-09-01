@@ -33,8 +33,7 @@ class _BodyState extends State<Body> {
     List todoList = jsonDecode(stringTodo);
     for (var todo in todoList) {
       setState(() {
-        todos.add(Todo(id: 1, title: '', description: '', status: false)
-            .fromJson(todo));
+        todos.add(Todo.fromJson(todo));
       });
     }
   }

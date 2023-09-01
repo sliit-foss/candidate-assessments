@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:todo_application/Class/todo.dart';
-import 'package:todo_application/Constants/colors.dart';
 
 class TodoView extends StatefulWidget {
   Todo todo;
@@ -40,50 +39,50 @@ class _TodoViewState extends State<TodoView> {
           child: Column(
             children: [
               Container(
-                child: colorOverride(
-                  TextField(
-                    onChanged: (data) {
-                      todo.title = data;
-                    },
-                    style: TextStyle(color: Theme.of(context).primaryColor),
-                    decoration: InputDecoration(
-                      labelStyle:
-                          TextStyle(color: Theme.of(context).primaryColor),
-                      labelText: "Title",
-                      fillColor: Theme.of(context).primaryColor,
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10.0),
-                        borderSide: BorderSide(
-                            color: Theme.of(context).primaryColorLight),
-                      ),
+                child: TextField(
+                  onChanged: (data) {
+                    todo.title = data;
+                  },
+                  style: TextStyle(color: Theme.of(context).primaryColor),
+                  decoration: InputDecoration(
+                    labelStyle:
+                        TextStyle(color: Theme.of(context).primaryColor),
+                    labelText: "Title",
+                    fillColor: Theme.of(context).primaryColor,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      borderSide: BorderSide(
+                          color: Theme.of(context).primaryColorLight),
                     ),
-                    controller: titleController,
                   ),
+                  controller: titleController,
                 ),
               ),
               const SizedBox(
                 height: 25,
               ),
               Container(
-                  child: colorOverride(TextField(
-                maxLines: 5,
-                onChanged: (data) {
-                  todo.description = data;
-                },
-                style: TextStyle(color: Theme.of(context).primaryColor),
-                decoration: InputDecoration(
-                  labelStyle: TextStyle(color: Theme.of(context).primaryColor),
-                  labelText: "Description",
-                  fillColor: Theme.of(context).primaryColor,
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                    borderSide:
-                        BorderSide(color: Theme.of(context).primaryColorLight),
+                child: TextField(
+                  maxLines: 5,
+                  onChanged: (data) {
+                    todo.description = data;
+                  },
+                  style: TextStyle(color: Theme.of(context).primaryColor),
+                  decoration: InputDecoration(
+                    labelStyle:
+                        TextStyle(color: Theme.of(context).primaryColor),
+                    labelText: "Description",
+                    fillColor: Theme.of(context).primaryColor,
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      borderSide: BorderSide(
+                          color: Theme.of(context).primaryColorLight),
+                    ),
+                    //fillColor: Colors.green
                   ),
-                  //fillColor: Colors.green
+                  controller: descriptionController,
                 ),
-                controller: descriptionController,
-              ))),
+              ),
             ],
           ),
         ),
@@ -140,17 +139,6 @@ class _TodoViewState extends State<TodoView> {
           ),
         ),
       ),
-    );
-  }
-
-  Widget colorOverride(Widget child) {
-    return Theme(
-      data: ThemeData(
-        primaryColor: const Color.fromARGB(255, 255, 255, 255),
-        hintColor: const Color.fromARGB(255, 255, 255, 255),
-        colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Colors.black),
-      ),
-      child: child,
     );
   }
 }
