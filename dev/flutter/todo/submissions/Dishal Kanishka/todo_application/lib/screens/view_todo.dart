@@ -10,8 +10,9 @@ class TodoView extends StatefulWidget {
 }
 
 class _TodoViewState extends State<TodoView> {
-  Todo todo;
   _TodoViewState({required this.todo});
+  Todo todo;
+
   TextEditingController titleController = TextEditingController();
   TextEditingController descriptionController = TextEditingController();
 
