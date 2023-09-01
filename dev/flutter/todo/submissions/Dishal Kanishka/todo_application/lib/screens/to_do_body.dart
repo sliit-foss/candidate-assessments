@@ -71,7 +71,7 @@ class _BodyState extends State<Body> {
                     saveTodo();
                   }
                 },
-                child: makeListTile(todos[index], index),
+                child: MakeListTile(todos[index], index),
               ),
             );
           }),
@@ -98,7 +98,7 @@ class _BodyState extends State<Body> {
     }
   }
 
-  makeListTile(Todo todo, index) {
+  MakeListTile(Todo todo, index) {
     return ListTile(
         contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
         leading: Container(
